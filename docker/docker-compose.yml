@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: django32
+    container_name: blog-server
+    command: >
+      /bin/bash -c "
+        cd /www/server/
+        gunicorn -c gunicorn.ini server.wsgi
+      "
+    ports:
+      - 8000:8000
+    volumes:
+      - ../:/www/

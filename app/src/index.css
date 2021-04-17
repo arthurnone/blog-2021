@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto Condensed", serif;
+}
+
+a {
+    text-underline: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.margin-small {
+    margin-bottom: 5px;
+}
+
+.margin-middle {
+    margin: 10px auto;
+}
+
+.center {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.poem {
+    display: block;
+    width: 100%;
+    margin: 70px auto 30px auto;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+.markdown-body a {
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px 0;
+}

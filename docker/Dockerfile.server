@@ -1,0 +1,7 @@
+FROM python:3.9.0
+USER root
+ENV LANG C.UTF-8
+RUN apt-get update
+ADD requirement.txt /
+RUN pip3 install -r /requirement.txt
+WORKDIR /root
